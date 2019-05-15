@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    tools:openDrawer="start">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5"/>
+
+        <ImageButton
+            android:id="@+id/shelfButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
+
+        <ImageButton
+            android:id="@+id/historyButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:layout_constraintTop_toBottomOf="@+id/shelfButton"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <ImageButton
+            android:id="@+id/turnoverButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintLeft_toLeftOf="@+id/scoreButton"
+            app:layout_constraintTop_toBottomOf="@+id/scoreButton"
+            app:srcCompat="@android:drawable/ic_menu_month" />
+
+        <ImageButton
+            android:id="@+id/scoreButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintStart_toStartOf="@id/guideline_vertical"
+            app:layout_constraintTop_toTopOf="@id/shelfButton"
+            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+        <ImageButton
+            android:id="@+id/productionButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintTop_toBottomOf="@+id/historyButton"
+            app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
+            app:srcCompat="@drawable/tool" />
+
+        <ImageButton
+            android:id="@+id/unconfirmButton"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/shape_rectangle"
+            app:layout_constraintTop_toBottomOf="@id/turnoverButton"
+            app:layout_constraintLeft_toLeftOf="@id/turnoverButton"
+            app:srcCompat="@drawable/wrong" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="製作清單"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/productionButton"
+            app:layout_constraintHorizontal_bias="0.631"
+            app:layout_constraintStart_toStartOf="@+id/productionButton"
+            app:layout_constraintTop_toBottomOf="@+id/productionButton" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="未確認訂單"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/unconfirmButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/unconfirmButton"
+            app:layout_constraintTop_toBottomOf="@+id/unconfirmButton" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="上架清單"
+            android:textSize="25dp"
+            app:fontFamily="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/shelfButton"
+            app:layout_constraintStart_toStartOf="@+id/shelfButton"
+            app:layout_constraintTop_toBottomOf="@+id/shelfButton" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="評分系統"
+            android:textSize="25dp"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="@+id/scoreButton"
+            app:layout_constraintStart_toStartOf="@+id/scoreButton"
+            app:layout_constraintTop_toBottomOf="@+id/scoreButton" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="營業額"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/turnoverButton"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="@+id/turnoverButton"
+            app:layout_constraintTop_toBottomOf="@+id/turnoverButton" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="歷史紀錄"
+            android:textSize="25dp"
+            app:layout_constraintEnd_toEndOf="@+id/historyButton"
+            app:layout_constraintHorizontal_bias="0.446"
+            app:layout_constraintStart_toStartOf="@+id/historyButton"
+            app:layout_constraintTop_toBottomOf="@+id/historyButton" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.DrawerLayout>
