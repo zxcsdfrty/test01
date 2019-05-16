@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".OrderFoodList">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="15dp"
+            android:layout_marginBottom="5dp"
+            android:textStyle="bold"
+            android:id="@+id/customerName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/customerPhone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="備註:"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:id="@+id/customerdescription"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="所點選餐點:"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listFood">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

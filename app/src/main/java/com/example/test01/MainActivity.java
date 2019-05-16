@@ -44,11 +44,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton shelfButten =(ImageButton) findViewById(R.id.shelfButton);
+        ImageButton confirmButton=(ImageButton)findViewById(R.id.productionButton);
+        ImageButton unconfirmButton=(ImageButton)findViewById(R.id.unconfirmButton);
         shelfButten.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent();
                 intent.setClass(MainActivity.this,ShelfHome.class);
+                startActivity(intent);
+            }
+        });
+        confirmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,ConfirmActivity.class);
+                startActivity(intent);
+            }
+        });
+        unconfirmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(MainActivity.this,Unconfirm.class);
                 startActivity(intent);
             }
         });
