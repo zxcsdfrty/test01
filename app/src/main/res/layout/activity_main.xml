@@ -27,7 +27,7 @@
             android:layout_height="130dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="60dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
@@ -38,7 +38,7 @@
             android:layout_height="130dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="60dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:layout_constraintTop_toBottomOf="@+id/shelfButton"
             app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
@@ -48,7 +48,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="60dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintLeft_toLeftOf="@+id/scoreButton"
             app:layout_constraintTop_toBottomOf="@+id/scoreButton"
             app:srcCompat="@android:drawable/ic_menu_month" />
@@ -58,7 +58,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginStart="30dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintStart_toStartOf="@id/guideline_vertical"
             app:layout_constraintTop_toTopOf="@id/shelfButton"
             app:srcCompat="@android:drawable/btn_star_big_off" />
@@ -69,7 +69,7 @@
             android:layout_height="130dp"
             android:layout_marginTop="60dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintTop_toBottomOf="@+id/historyButton"
             app:layout_constraintEnd_toEndOf="@id/guideline_vertical"
             app:srcCompat="@drawable/tool" />
@@ -79,7 +79,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_marginTop="60dp"
-            android:background="@drawable/shape_rectangle"
+            android:background="@layout/image_btn_press"
             app:layout_constraintTop_toBottomOf="@id/turnoverButton"
             app:layout_constraintLeft_toLeftOf="@id/turnoverButton"
             app:srcCompat="@drawable/wrong" />
@@ -92,7 +92,6 @@
             android:text="製作清單"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/productionButton"
-            app:layout_constraintHorizontal_bias="0.631"
             app:layout_constraintStart_toStartOf="@+id/productionButton"
             app:layout_constraintTop_toBottomOf="@+id/productionButton" />
 
@@ -105,7 +104,6 @@
             android:text="未確認訂單"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/unconfirmButton"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="@+id/unconfirmButton"
             app:layout_constraintTop_toBottomOf="@+id/unconfirmButton" />
 
@@ -142,7 +140,6 @@
             android:text="營業額"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/turnoverButton"
-            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toStartOf="@+id/turnoverButton"
             app:layout_constraintTop_toBottomOf="@+id/turnoverButton" />
 
@@ -154,7 +151,6 @@
             android:text="歷史紀錄"
             android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="@+id/historyButton"
-            app:layout_constraintHorizontal_bias="0.446"
             app:layout_constraintStart_toStartOf="@+id/historyButton"
             app:layout_constraintTop_toBottomOf="@+id/historyButton" />
 
